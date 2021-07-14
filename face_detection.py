@@ -50,7 +50,12 @@ while True:
     
     cv2.imshow('Face detection', frame)
     #waitKey will capture frames every (x) miliseconds
-    cv2.waitKey(1) 
+    key = cv2.waitKey(1) 
 
+    #stop if Q is pressed
+    if key == 81 or key == 113:
+        break
+
+webcam.release()
 
 print("Code Completed")
