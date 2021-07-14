@@ -1,0 +1,11 @@
+HAAR CASCADE ALGORITHM
+
+Haar Features (aka rudimentary building blocks)
+5 features:
+a)2 edge features
+b)2 line features
+c)1 four-rectangle features
+
+Each of them check the relations of pixels in those segments and then when we chain them together and layer 
+enough, we can get a template for a face. It learns what combination of them is required to make a face.
+That's why it's enough to use a grayscale becuase we only check for brightness.
